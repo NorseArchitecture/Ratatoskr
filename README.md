@@ -25,3 +25,6 @@ A replacement for the messaging contracts in Asgard. Those stay put — the Æsi
 ## Status
 
 This repo is a bare shell. No specs have converged here yet. The design process starts in [Glitnir](https://github.com/NorseArchitecture/Glitnir) — brainstorm → spec → plan → code, in that order, never reversed. The full messaging decision (NServiceBus 10.2, `ReceiveOnly` transport transaction mode, source-generated handler registration, two endpoint flavors per context) is in `Glitnir/docs/Platform/specs/2026-06-03-messaging-foundation-design.md`.
+
+## Soundtrack: Ratatöskr
+[![Soundtrack: Ratatöskr](https://img.youtube.com/vi/GvnP7TThMyE/maxresdefault.jpg)](https://www.youtube.com/watch?v=GvnP7TThMyE)
