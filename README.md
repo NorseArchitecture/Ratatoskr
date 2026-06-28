@@ -2,6 +2,10 @@
 
 > *The sly squirrel that races up and down Yggdrasil, carrying slander and secrets between the eagle at the crown and Níðhöggr at the roots — the original message broker.*
 
+![Ratatoskr — the sly squirrel who races the length of Yggdrasil, carrying messages between the eagle at the crown and Níðhöggr gnawing at the roots](https://github.com/user-attachments/assets/e8657b0f-5176-43ec-bb87-a11d2b80cf43 "Ratatoskr — the original message broker")
+
+*Image credit: [@norsemythologyclips](https://www.instagram.com/norsemythologyclips/) — go follow them.*
+
 NServiceBus endpoint configuration, saga infrastructure, message conventions, and transport wiring for the Norse Architecture. Asgard declares the messaging surface; Ratatoskr carries it. The squirrel runs up and down Yggdrasil so the Æsir never need to know how messages travel.
 
 ## What this is
