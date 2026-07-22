@@ -10,7 +10,7 @@ NServiceBus endpoint configuration, saga infrastructure, message conventions, an
 
 ## What this is
 
-`Norse.NServiceBus.*` — the NServiceBus implementation layer, carved from Midgard for the same reason Urdarbrunnr was:
+`Norse.NServiceBus.*` — the NServiceBus implementation layer, carved from Midgard for the same reason Urðarbrunnr was:
 
 - NServiceBus has strong opinions (sagas, message conventions, endpoint configuration) that `Norse.Infrastructure` should not be coupled to.
 - It has its own versioning and licensing lifecycle independent of the core abstractions.
