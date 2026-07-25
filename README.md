@@ -10,11 +10,11 @@ NServiceBus endpoint configuration, saga infrastructure, message conventions, an
 
 ## What this is
 
-`Norse.NServiceBus.*` — the NServiceBus implementation layer, carved from Midgard for the same reason Urðarbrunnr was:
+`Norse.Messaging.*` — the platform's messaging realm, scoped to all message-broker and transport activity, not just NServiceBus:
 
-- NServiceBus has strong opinions (sagas, message conventions, endpoint configuration) that `Norse.Infrastructure` should not be coupled to.
-- It has its own versioning and licensing lifecycle independent of the core abstractions.
-- Not every Midgardian implementation will use it — some may use MassTransit, Rebus, Azure Service Bus SDK directly, or something else entirely.
+- `Norse.Messaging.NServiceBus` is today's live vendor family — endpoint configuration, saga infrastructure, message conventions, and transport wiring — carved from Midgard for the same reason Urðarbrunnr was.
+- NServiceBus has strong opinions (sagas, message conventions, endpoint configuration) that `Norse.Infrastructure` should not be coupled to, and it has its own versioning and licensing lifecycle independent of the core abstractions.
+- A different broker or messaging library lands here as its own sibling under `Norse.Messaging.*` (`Norse.Messaging.MassTransit`, `Norse.Messaging.Rebus`, …) the same way Heimdall took on FluentUI — not every Midgardian implementation will use NServiceBus.
 
 Asgard (`Norse.Abstractions`) declares the messaging surface — `IPublishEvent<T>`, `ISendCommand<T>`, `IHandleMessage<T>`, and the like — without caring how messages travel. Ratatoskr is the carrier.
 

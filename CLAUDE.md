@@ -1,4 +1,4 @@
-# CLAUDE.md — Ratatoskr (`Norse.NServiceBus`)
+# CLAUDE.md — Ratatoskr (`Norse.Messaging`)
 
 ## 0. Wrong Root — Halt
 
@@ -8,7 +8,7 @@ Session root must be **Bifröst**, not this repo directly — org-wide settings 
 
 ## 1. What This Repository Is
 
-Ratatoskr is **the squirrel** — `Norse.NServiceBus`: NServiceBus endpoint configuration, saga infrastructure, message conventions, and transport wiring. It is the NServiceBus-specific implementation layer carved from Midgard for the same reason Urðarbrunnr was: NServiceBus has strong opinions (sagas, message conventions, endpoint configuration, licensing) that should not seep into `Norse.Infrastructure`, it has its own versioning and licensing lifecycle independent of the core abstractions, and not every Midgardian implementation will use it — some may use MassTransit, Rebus, Azure Service Bus SDK directly, or something else entirely.
+Ratatoskr is **the squirrel** — `Norse.Messaging`: the platform's messaging realm, scoped to all message-broker and transport activity, not just NServiceBus. `Norse.Messaging.NServiceBus` is today's live vendor family — endpoint configuration, saga infrastructure, message conventions, and transport wiring — carved from Midgard for the same reason Urðarbrunnr was: NServiceBus has strong opinions (sagas, message conventions, endpoint configuration, licensing) that should not seep into `Norse.Infrastructure`, and it has its own versioning and licensing lifecycle independent of the core abstractions. A different broker or messaging library (MassTransit, Rebus, the Azure Service Bus SDK directly) lands here the same way Heimdall took on FluentUI or Urðarbrunnr would take on a second ORM: drop in the vendor-specific `.csproj` as a sibling under `Norse.Messaging.*` (`Norse.Messaging.MassTransit`, …), wire it up, done — no separate realm, no new repo.
 
 Asgard (`Norse.Abstractions`) declares the messaging surface — `IPublishEvent<T>`, `ISendCommand<T>`, `IHandleMessage<T>`, and the like — without caring how the squirrel carries them. Ratatoskr is the carrier; the Æsir never need to know it exists.
 
