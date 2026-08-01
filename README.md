@@ -2,7 +2,9 @@
 
 > *The sly squirrel that races up and down Yggdrasil, carrying slander and secrets between the eagle at the crown and Níðhöggr at the roots — the original message broker.*
 
-![Ratatoskr — the sly squirrel who races the length of Yggdrasil, carrying messages between the eagle at the crown and Níðhöggr gnawing at the roots](https://github.com/user-attachments/assets/e8657b0f-5176-43ec-bb87-a11d2b80cf43 "Ratatoskr — the original message broker")
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e8657b0f-5176-43ec-bb87-a11d2b80cf43" alt="Ratatoskr — the sly squirrel who races the length of Yggdrasil, carrying messages between the eagle at the crown and Níðhöggr gnawing at the roots" title="Ratatoskr — the original message broker" />
+</p>
 
 *Image credit: [@norsemythologyclips](https://www.instagram.com/norsemythologyclips/) — go follow them.*
 
